@@ -19,7 +19,7 @@ GitHub es una plataforma en línea (al igual que: GitLab, Bitbucket, SourceForge
 
 Link de referencia útil: [Glosario de Git y Github](https://docs.github.com/es/get-started/quickstart/github-glossary)
 
-## 3. Markdown y sus comandos
+## 3. Markdown
 ------
 
 ### Estilo:
@@ -79,3 +79,23 @@ Para crear una lista de tareas, debemos escribir un guión y espacio, seguido de
 
 
 Link de referencia útil: [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## 3.1 Comandos
+------
+Entre los [comandos más utilizados](https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf) en github tenemos:
+
+|Nombre|código|Qué hace|
+|---|---|---|
+|Git Status|`git status`|Podemos obtener información cómo: Si la rama actual está actualizada, si hay algo que necesita un commit, un add, o borrarse, archivos preparados, sin preparar o sin seguimiento, archivos creados, modificados o eliminados|
+|Git clone|`git clone https://name-of-the-repository-link`|Git clone básicamente hace una copia idéntica de la última versión de un proyecto en un repositorio y la guarda en su computadora.|
+|Git branch|`git branch <nombre-de-la-rama>`|Creando una nueva rama|
+|Git push|`git push -u <remote> <nombre-de-la-rama>`|Se utiliza para insertar la nueva rama en el repositorio remoto|
+|Git branch list|`git branch or git branch --list`|Se utiliza para ver las ramas|
+|Git Delete Branch|`git branch -d <nombre-de-la-rama>`|Se utiliza para borrar las ramas|
+|Git Checkout|`git checkout <nombre-de-la-rama>`|Usamos git checkout principalmente para cambiar de una rama a otra.|
+|Git add|`git add <file>` para un solo archivo o bien `git add -A`|Utilizamos el comando git add para incluir los cambios de un archivo en nuestro próximo commit.|
+|Git Commit|`git commit -m "commit message"`|Nos permite agregar comentarios y guardar localmente los cambios realizados, como un punto de guardado al que podemos volver.|
+|GitPush|`git push <remote> <nombre-de-la-rama>`|Después de confirmar los cambios, con git push podemos subir las confirmaciones al repositorio remoto|
+|Git Pull|`git pull <remote>`|Este comando nos permite traer las actualizaciones del repositorio remoto al local|
+|Git Revert|`git revert #codigo hash`|Esto nos permite revertir cualquier cambio de commit que hayamos realizado y volvemos a un "punto seguro"|
+|Git Merge|`git merge <nombre-de-la-rama>`|El paso final es fusionar la rama en la que trabajamos con la rama principal, para esto siempre se recomienda que la versión sea la misma o la más actualizada para evitar problemas de versionado o funciones.|
